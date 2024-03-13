@@ -1,0 +1,39 @@
+/* Style de base pour le formulaire */
+body {
+    background-color: #007bff;
+}
+
+.formConnect {
+    max-width: 300px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrer le formulaire horizontalement */
+    padding: 20px; /* Ajouter un peu d'espace intérieur autour du formulaire */
+    border: 1px solid #ccc; /* Ajouter une bordure grise */
+    border-radius: 5px; /* Ajouter des coins arrondis */
+}
+
+/* Style des champs de saisie */
+.formConnect input[type="text"],
+.formConnect input[type="password"] {
+    width: 100%; /* Remplir la largeur du conteneur */
+    margin-bottom: 10px; /* Ajouter un peu d'espace en bas de chaque champ */
+    padding: 10px; /* Ajouter un peu de remplissage */
+    border: 1px solid #ccc; /* Ajouter une bordure grise */
+    border-radius: 3px; /* Ajouter des coins arrondis */
+    box-sizing: border-box; /* Inclure le remplissage et la bordure dans la largeur du champ */
+}
+
+/* Style du bouton de soumission */
+.formConnect button {
+    width: 100%; /* Remplir la largeur du conteneur */
+    padding: 10px; /* Ajouter un peu de remplissage */
+    background-color: #007bff; /* Définir la couleur d'arrière-plan du bouton */
+    color: #fff; /* Définir la couleur du texte */
+    border: none; /* Supprimer la bordure */
+    border-radius: 3px; /* Ajouter des coins arrondis */
+    cursor: pointer; /* Définir le curseur comme pointer au survol */
+}
+
+/* Style au survol du bouton */
+.formConnect button:hover {
+    background-color: #0056b3; /* Changer la couleur d'arrière-plan au survol */
+}
