@@ -1,7 +1,4 @@
 /* Style de base pour le formulaire */
-body {
-    background-color: #007bff;
-}
 
 .formConnect {
     max-width: 300px; /* Largeur maximale du formulaire */
@@ -36,4 +33,67 @@ body {
 /* Style au survol du bouton */
 .formConnect button:hover {
     background-color: #0056b3; /* Changer la couleur d'arrière-plan au survol */
+}
+
+
+/* Style de base pour la page */
+body {
+    font-family: Arial, sans-serif; /* Utiliser une police de caractères lisible */
+    margin: 0; /* Supprimer les marges par défaut du corps */
+    padding: 0; /* Supprimer les rembourrages par défaut du corps */
+}
+
+/* Style de l'en-tête */
+h1 {
+    text-align: center; /* Centrer le texte */
+}
+
+/* Style des sections */
+div {
+    margin-bottom: 20px; /* Ajouter un peu d'espace entre les sections */
+}
+
+/* Style des boutons */
+button {
+    padding: 10px 20px; /* Ajouter un peu de remplissage */
+    background-color: #007bff; /* Définir la couleur d'arrière-plan du bouton */
+    color: #fff; /* Définir la couleur du texte */
+    border: none; /* Supprimer la bordure */
+    border-radius: 3px; /* Ajouter des coins arrondis */
+    cursor: pointer; /* Définir le curseur comme pointer au survol */
+    margin-right: 10px; /* Ajouter un peu d'espace à droite */
+}
+
+/* Style au survol des boutons */
+button:hover {
+    background-color: #0056b3; /* Changer la couleur d'arrière-plan au survol */
+}
+
+/* Style du formulaire */
+.addPost form {
+    text-align: center;
+    max-width: 300px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centrer le formulaire horizontalement */
+}
+
+/* Style des champs de saisie */
+.addPost input[type="text"] {
+    text-align: center;
+    width: 100%; /* Remplir la largeur du conteneur */
+    margin-bottom: 10px; /* Ajouter un peu d'espace en bas de chaque champ */
+    padding: 10px; /* Ajouter un peu de remplissage */
+    border: 1px solid #ccc; /* Ajouter une bordure grise */
+    border-radius: 3px; /* Ajouter des coins arrondis */
+    box-sizing: border-box; /* Inclure le remplissage et la bordure dans la largeur du champ */
+}
+
+/* Style du bouton de soumission */
+.addPost button[type="submit"] {
+    width: 100%; /* Remplir la largeur du conteneur */
+}
+
+.all {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
 }

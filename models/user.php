@@ -1,5 +1,4 @@
 <?php
-include './dbConnect.php';
 class User
 {
     protected string $name;
@@ -16,18 +15,11 @@ class User
         $this->mail = $mail;
         $this->password = $password;
     }
-
+  
     public function getName(): string
     {
         return $this->name;
     }
-
-
-    // je vérifie si un utilisateur existe , avec les infos mail password , 
-    // je regarde dans la BDD si cet utilisateur exite en comparant
-    // les infos qu'il m'envoie avec celle déjà en bdd
-    // si il existe on lui créer un new user avec les infos de la bdd / 
-    // si non renoie null
 
 
     public static function  connectUser($mail, $password): User|null
@@ -53,12 +45,9 @@ class User
         $query = $db->prepare('INSERT INTO user(name , mail , password) VALUES(? , ? , ?)');
         $query->execute([$name, $mail, $password]);
         
+
         return new User($name, $mail, $password);
     }
 }
 
 
-User::registerUser('Arthur', 'Arthur@gmail.fr', 'azety');
-
-
-var_dump(User::connectUser('legabinsoucieux@gmail.com', 'azert123'));

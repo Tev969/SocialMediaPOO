@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles.css">
     <title>Social</title>
 </head>
 <body>
     <h1>Social Network</h1>
-    <div>
+    <div class="all">
         <h2>Home</h2>
         <p>Welcome</p>
         <button type="submit">Logout</button>
-    </div>
+   
     <div class="post">
         <h2>Titre post</h2>
         <button type="submit">Update</button>
@@ -24,6 +25,7 @@
             <input type="text" name="content" id="content" placeholder="Content">
             <button  type="submit">Submit</button>
         </form>
+        </div>
     </div>
 </body>
 </html>
