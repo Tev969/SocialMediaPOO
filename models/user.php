@@ -1,4 +1,6 @@
 <?php
+
+
 class User
 {
     protected string $name;
@@ -15,11 +17,17 @@ class User
         $this->mail = $mail;
         $this->password = $password;
     }
-  
+
     public function getName(): string
     {
         return $this->name;
     }
+
+    public function getid(): int
+    {
+        return $this->id;
+    }
+
 
 
     public static function  connectUser($mail, $password): User|null
@@ -34,7 +42,7 @@ class User
             $name = $result[0]['name'];
             $mail = $result[0]['mail'];
             $password = $result[0]['password'];
-
+            $_SESSION['id'] = $result[0]['id'];
             return new User($name, $mail, $password);
         }
     }
@@ -44,10 +52,8 @@ class User
         $db = DbConnect::getInstance();
         $query = $db->prepare('INSERT INTO user(name , mail , password) VALUES(? , ? , ?)');
         $query->execute([$name, $mail, $password]);
-        
+
 
         return new User($name, $mail, $password);
     }
 }
-
-

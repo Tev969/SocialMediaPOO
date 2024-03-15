@@ -6,9 +6,11 @@ require_once(__DIR__ . "/../src/controller/MainController.php");
 require_once(__DIR__ . "/../src/controller/RegisterController.php");
 require_once(__DIR__ . "/../models/dbConnect.php");
 require_once(__DIR__ . "/../models/user.php");
+require_once(__DIR__ . "/../models/post.php");
 require_once(__DIR__ . "/../core/rooter.php");
 
 try{
+    session_start();
     //Je crée un objet de mon routeur
    $app = new Router();
    //J'appelle la fonction qui gère les routes (donc qui renvoie l'utilisateur vers le bon controller)

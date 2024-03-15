@@ -11,7 +11,7 @@
     <div class="all">
         <h2>Home</h2>
         <p>Welcome</p>
-        <button type="submit">Logout</button>
+        <button name="logout" type="submit">Logout</button>
    
     <div class="post">
         <h2>Titre post</h2>
@@ -20,10 +20,10 @@
     </div>
     <div class="addPost">
         <h2>New post</h2>
-        <form action="post">
-            <input type="text" name="title" id="title" placeholder="Title">
-            <input type="text" name="content" id="content" placeholder="Content">
-            <button  type="submit">Submit</button>
+        <form action="/"  class="formConnect" method="post">
+            <input type="text" name="title" id="title" placeholder="Title" required>
+            <input type="text" name="content" id="content" placeholder="Content" required>
+            <button name="postBtn" type="submit">Submit</button>
         </form>
         </div>
     </div>
