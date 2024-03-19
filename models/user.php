@@ -43,6 +43,7 @@ class User
             $mail = $result[0]['mail'];
             $password = $result[0]['password'];
             $_SESSION['id'] = $result[0]['id'];
+            $_SESSION['author_name'] = $name;
             return new User($name, $mail, $password);
         }
     }

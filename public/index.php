@@ -4,6 +4,7 @@ require_once(__DIR__ . "/../src/controller/parentController.php");
 require_once(__DIR__ . "/../src/controller/loginController.php");
 require_once(__DIR__ . "/../src/controller/MainController.php");
 require_once(__DIR__ . "/../src/controller/RegisterController.php");
+require_once(__DIR__ . "/../src/controller/UpdateController.php");
 require_once(__DIR__ . "/../models/dbConnect.php");
 require_once(__DIR__ . "/../models/user.php");
 require_once(__DIR__ . "/../models/post.php");
